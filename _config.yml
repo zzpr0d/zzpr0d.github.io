@@ -15,6 +15,17 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
+
+# Navigation links
+nav_links:
+  - title: Geopolitics
+    url: /tag/geopolitics/
+  - title: Music
+    url: /tag/music/
+  - title: Quotes
+    url: /tag/quotes/
+  - title: About
+    url: /about/
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
