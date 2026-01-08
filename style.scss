@@ -287,3 +287,32 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+
+
+/* Custom Aesthetic Tweaks */
+body {
+  background-color: #faf9f6; /* A softer, paper-like white */
+  color: #333;
+  font-family: "Georgia", serif; /* More classic for reading */
+}
+
+.post h1 {
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Quote styling */
+blockquote {
+  border-left: 3px solid #8c7b75;
+  padding-left: 20px;
+  font-style: italic;
+  color: #555;
+}
