@@ -1,84 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+  {% include head.html %}
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-<div class="hero-header">
-  <h1 class="site-title">{{ site.name }}</h1>
-  <p class="site-tagline">{{ site.description }}</p>
-           <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-</div> 
-          
-         <nav class="nav-menu">
-  <a href="{{ site.baseurl }}/">Blog</a>
-  <a href="{{ site.baseurl }}/tag/geopolitics/">Geopolitics</a>
-  <a href="{{ site.baseurl }}/tag/music/">Music</a>
-  <a href="{{ site.baseurl }}/tag/quotes/">Quotes</a>
-  <a href="{{ site.baseurl }}/about/">About</a>
-</nav>
-
-<style>
-  .nav-menu {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-  }
-  .nav-menu a {
-    text-decoration: none;
-    color: #666;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-menu a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-  .nav-menu a:active, .nav-menu a:focus {
-    color: #000;
-    font-weight: 700;
-  }
-</style>
-        </header>
-      </div>
-    </div>
-
     <div id="main" role="main" class="container">
-      {{ content }}
+      
+      <header class="hero-header">
+        <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-tagline">{{ site.description }}</p>
+        
+        <nav class="nav-menu">
+          <a href="{{ site.baseurl }}/">Blog</a>
+          <a href="{{ site.baseurl }}/tag/geopolitics/">Geopolitics</a>
+          <a href="{{ site.baseurl }}/tag/music/">Music</a>
+          <a href="{{ site.baseurl }}/tag/quotes/">Quotes</a>
+          <a href="{{ site.baseurl }}/about/">About</a>
+        </nav>
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+      {% include footer.html %}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
+    <style>
+      .hero-header {
+        padding: 40px 0 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 40px;
+      }
+      .site-title a {
+        text-decoration: none;
+        color: #1a1a1a;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      .site-tagline {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        color: #888;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 10px 0 20px 0;
+      }
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .nav-menu a {
+        text-decoration: none;
+        color: #666;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .nav-menu a:hover {
+        color: #000;
+      }
+    </style>
   </body>
 </html>
