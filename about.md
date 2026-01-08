@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### The Person behind the Garden
+Welcome. I'm Antonio. This site is a collection of things I find important and interesting, from the complexities of global power shifts to the simplicity of a good viby track.
 
-### More Information
+### Why this blog exists
+In a world of algorithmic feeds, I wanted a place of my own, that I own. 
+* **Geopolitics:** My attempt to make sense of a changing world.
+* **Music:** A curation of sounds that define my weeks.
+* **Quotes:** Daily reminders from people wiser than me.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+### Contact
+If you want to discuss a post or share a music recommendation, you can find me at: [Your Email or Social Link].
