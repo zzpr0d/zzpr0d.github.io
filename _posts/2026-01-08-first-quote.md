@@ -21,8 +21,8 @@ tags: [quotes]
 </div>
 
 ---
-
-### Why this quote matters
-You can write your analysis of the quote here. It will appear below the "suspense dots" on your main page.
-
-(https://en.wikipedia.org/wiki/Nikita_Gill)
+<div style="margin-top: 30px; text-align: center;">
+   <a href="https://google.com" style="color: #D4AF37; font-weight: bold; text-decoration: underline;">
+      Click here to learn more →
+   </a>
+</div>
