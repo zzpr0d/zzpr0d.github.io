@@ -9,9 +9,9 @@ Welcome. I'm Antonio. This site is a collection of things I find important and i
 
 ### Why this blog exists
 In a world of algorithmic feeds, I wanted a place of my own, that I own. 
-* **Geopolitics:** My attempt to make sense of a changing world.
-* **Music:** A curation of sounds that define my weeks.
-* **Quotes:** Daily reminders from people wiser than me.
+* **Geopolitics:** Making sense of a changing world.
+* **Music:** A curation of sounds that define my taste and creative mind.
+* **Quotes:** Reminders from people wiser than me.
 
 ### Contact
 If you want to discuss a post or share a music recommendation, you can find me at: [Your Email or Social Link].
