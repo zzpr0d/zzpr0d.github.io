@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The First Quote"
+title: "The Dance"
 tags: [quotes]
 ---
 
