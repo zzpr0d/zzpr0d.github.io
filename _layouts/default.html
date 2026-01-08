@@ -135,10 +135,10 @@ a:hover {
       
       <nav class="nav-menu">
         <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}style="border-bottom: 2px solid #1a1a1a;"{% endif %}>Home</a>
-        <a href="{{ '/tag/geopolitics/' | relative_url }}">Geopolitics</a>
-        <a href="{{ '/tag/music/' | relative_url }}">Music</a>
-        <a href="{{ '/tag/quotes/' | relative_url }}">Quotes</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/tag/geopolitics/' | relative_url }}" {% if page.url == "/" %}style="border-bottom: 2px solid #1a1a1a;"{% endif %}>Geopolitics</a>
+        <a href="{{ '/tag/music/' | relative_url }}" {% if page.url == "/" %}style="border-bottom: 2px solid #1a1a1a;"{% endif %}>Music</a>
+        <a href="{{ '/tag/quotes/' | relative_url }}" {% if page.url == "/" %}style="border-bottom: 2px solid #1a1a1a;"{% endif %}>Quotes</a>
+        <a href="{{ '/about/' | relative_url }}" {% if page.url == "/" %}style="border-bottom: 2px solid #1a1a1a;"{% endif %}>About</a>
       </nav>
     </header>
 
