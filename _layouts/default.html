@@ -8,8 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   
   <style>
-    /* --- ALL CSS CODE GOES HERE --- */
-    
+    /* 1. BACKGROUND IMAGE SETTINGS */
     body {
       background-image: url('{{ "/paper background.jpg" | relative_url }}'); 
       background-attachment: fixed;
@@ -18,25 +17,91 @@
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
+      color: #333;
     }
 
-    #main {
+    /* 2. THE FLOATING PAPER CARD */
+    #main-container {
       background-color: #ffffff; 
       max-width: 800px;
       margin: 60px auto;        
       padding: 50px;            
       box-shadow: 0 20px 50px rgba(0,0,0,0.15); 
       border-radius: 12px;      
-      min-height: 100vh;        
+      min-height: 80vh; 
     }
 
-    /* Keep your existing nav and hero styles below this... */
+    /* 3. HEADER & NAVIGATION */
+    .hero {
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    .site-title a {
+      text-decoration: none;
+      color: #1a1a1a;
+    }
+    .site-tagline {
+      font-size: 0.9rem;
+      color: #888;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 10px 0 20px 0;
+    }
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: #666;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .nav-menu a:hover {
+      color: #000;
+    }
+
+    /* 4. CONTENT STYLING */
+    .post-content {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    img { max-width: 100%; border-radius: 8px; }
+
+    /* MOBILE ADJUSTMENTS */
+    @media (max-width: 600px) {
+      #main-container { margin: 10px; padding: 20px; }
+      .site-title { font-size: 1.8rem; }
+    }
   </style>
 </head>
 
 <body>
-  <div id="main"> <header class="hero">
-        </header>
+
+  <div id="main-container"> 
+    
+    <header class="hero">
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.name }}</a></h1>
+      <p class="site-tagline">{{ site.description }}</p>
+      
+      <nav class="nav-menu">
+        <a href="{{ '/' | relative_url }}">Blog</a>
+        <a href="{{ '/tag/geopolitics/' | relative_url }}">Geopolitics</a>
+        <a href="{{ '/tag/music/' | relative_url }}">Music</a>
+        <a href="{{ '/tag/quotes/' | relative_url }}">Quotes</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </header>
 
     <main class="post-content">
       {{ content }}
