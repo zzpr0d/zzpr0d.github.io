@@ -316,3 +316,30 @@ blockquote {
   font-style: italic;
   color: #555;
 }
+
+
+/* Typography Update */
+body {
+  font-family: 'Inter', sans-serif; /* Clean, modern font for reading */
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fdfbf7; /* Warm, aesthetic background */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif; /* Elegant font for titles */
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+/* Quote styling */
+blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2em;
+  border-left: 4px solid #8c7b75;
+  padding-left: 20px;
+  margin: 30px 0;
+  color: #555;
+}
