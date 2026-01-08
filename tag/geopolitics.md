@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Geopolitics & Strategy
 permalink: /tag/geopolitics/
 ---
