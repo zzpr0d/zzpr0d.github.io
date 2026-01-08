@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What I'm Listening Today"
+tag: [music]
 ---
 This track was showed to me by an important person.
 
