@@ -82,6 +82,36 @@
     @media (max-width: 600px) {
       #main-container { margin: 10px; padding: 20px; }
       .site-title { font-size: 1.8rem; }
+
+    /* GLOBAL LINK STYLING */
+a {
+  text-decoration: none; /* Removes the permanent underline */
+  color: #1a1a1a;        /* Makes links black instead of blue */
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #555;           /* Changes color slightly when you point at it */
+  text-decoration: underline; /* Adds the underline back only on hover */
+}
+
+/* SPECIFIC STYLING FOR POST LISTS */
+.post-list h3 a {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+/* NAV MENU LINKS (Keep them clean) */
+.nav-menu a {
+  border-bottom: 2px solid transparent; /* Prepare for a cool hover effect */
+}
+
+.nav-menu a:hover {
+  text-decoration: none; /* No underline for the menu */
+  border-bottom: 2px solid #1a1a1a; /* Instead, a thick line underneath */
+}
+      
     }
   </style>
 </head>
