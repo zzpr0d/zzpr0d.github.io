@@ -22,7 +22,7 @@ tags: [quotes]
 
 ---
 <div style="margin-top: 30px; text-align: center;">
-   <a href="https://google.com" style="color: #D4AF37; font-weight: bold; text-decoration: underline;">
-      Click here to learn more →
+   <a href="https://en.wikipedia.org/wiki/Nikita_Gill" style="color: #D4AF37; font-weight: bold; text-decoration: underline;">
+      Nikita Gill →
    </a>
 </div>
